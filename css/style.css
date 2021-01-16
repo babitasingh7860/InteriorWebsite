@@ -1,0 +1,601 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+  font-family: var(--para);
+  word-spacing: 3px;
+  padding: 10px;
+}
+
+.navbar{
+    display: flex;
+    
+
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.nav-list{
+    width: 80%;
+    /* background-color: rgb(252, 252, 252); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.nav-list li{
+    list-style: none;
+    padding: 16px 25px;
+    font-family: var(--font1);
+    align-items: center;
+
+    
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    
+}
+.nav-list li a:hover{
+    color: #55CBDE
+    
+}
+
+/* Icon Bar */
+#iconbar{
+  color: rgb(2, 2, 2);
+  font-size: 20px;
+  
+  visibility: hidden;
+}
+
+.checkbtn{
+  font-size: 30px;
+  float: right;
+  line-height: 80px;
+  cursor: pointer;
+  margin-right: 0px;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+
+ /* .rightNav{
+    /* background-color: rgb(255, 255, 255);
+    width: 30%;
+    text-align: right;
+    padding: 16px 20px;
+} */ 
+.logo{
+    width: 27%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.logo img{
+    width: 40%;
+    border: 1px solid white;
+    border-radius: 30%;
+}
+
+@media (max-width:952px){
+  .logo {
+    font-size: 30px;
+  }
+  .nav-list ul li a{
+    font-size: 16px;
+  }
+}
+
+/* @media (max-width:858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: 0;
+    text-align: center;
+  }
+  .nav ul li{
+    display: block;
+  }
+  .nav ul li a{
+  font-size: 20px;
+  }
+
+   a:hover , a.active{
+
+   background-color: none;
+   color: #0082e6;
+  }
+} */
+
+
+.carousel-caption {
+  margin: 600px 100px;
+  font-family: var(--font3);
+  width: 50%;
+  text-transform: uppercase; 
+  
+}
+.carousel-caption h1{
+  font-size: 75px;
+
+}
+.carousel-caption p{
+  font-size: 20px;
+
+}
+
+.black-overlay {
+  position: absolute;
+  height: 550px;
+  width: 450px;
+  background-color: rgba(0, 0, 0,) ;
+}
+ .btn1{
+   background-color: #edf2f3;
+   padding: 6px;
+   font-family: var(--font1);
+   text-transform: uppercase;
+   border-radius: 5px;
+   color: black;
+   margin: 15px 200px;
+   
+ }
+
+ /* .text-left{
+   margin: 200px 10px;
+   text-align: left;
+   width: 450px;
+   -webkit-animation: bar 2s ease;
+   text-shadow: 2px 2px  rgb(97, 95, 95);
+   
+ }
+ 
+
+.text-right{
+  margin: 160px 800px;
+  text-align: right;
+  width: 450px;
+  -webkit-animation: bar2 2s ease;
+  
+}
+
+.text-center{
+   margin: 200px 100px;
+  text-align: center;
+  width: 800px;
+  -webkit-animation: bar3 2s ease;
+}
+ 
+@-webkit-keyframes bar3{
+  0%{height:0px}
+  100%{height:450px}
+ } */
+
+ .section2{
+   width: 100%;
+   padding: 35px 20%;
+   justify-content: center;
+   
+   background-color: #00BCD5;
+  
+ } 
+ .section2 h4{
+   color: white;
+   font-family: var(--font3);
+   font-size: 28px;
+ }
+ .row{
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+ }
+ .col-12{
+  flex: 0 0 100%;
+  max-width: 100%;
+ }
+
+ /* @media (max-width: 1200px){
+   .col-12{
+     font-size: 15px;
+     display: flex;
+     justify-content: center;
+     width: 100%;
+   }
+ } */
+ .heading {
+  padding: 25px ;
+  text-transform: uppercase;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 25px;
+  font-family: var(--font3);
+ 
+}
+
+ /* for the first conatiner grid  */
+ .grid-container{
+  display: grid;
+  grid-column-gap: 5px;
+  grid-template-columns: repeat(auto-fit , 30rem);
+  justify-content: center;
+  padding: 25px 250px;
+  margin: auto;
+ }
+ 
+
+ .container-item{
+   background-color: white;
+   font-size: 15px;
+   border: 1px solid rgb(250, 250, 250);
+   padding: 15px  18px;
+   margin: 10px 20px;
+   text-align: left;
+   border-radius: 5px;
+  
+   
+   
+ }
+ .container-item h3 {
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  
+  text-align: left;
+  font-size: 18px;
+  font-family: var(--font4);
+}
+.container-item h3 i{
+  margin: auto ;
+  margin-right: 10px;
+}
+
+ 
+ .container-item:hover{
+   background-color:#01BCD4;
+   color: white;
+ }
+
+ .heading-2 {
+  
+  text-transform: uppercase; 
+  font-size: 25px;
+  font-family: var(--font3);
+}
+
+
+
+/* for the second container grid  */
+.grid-container-2{
+  display: grid;
+  grid-column-gap: 0px;
+  grid-template-columns: repeat(auto-fit , minmax(400px , 2fr));
+  justify-content: center;
+  padding: 25px 0px;
+  font-family: var(--para);
+  background-color: #F8F8F8;
+  
+   
+
+ } 
+.container-item-2{
+   background-color: #F8F8F8;
+   font-size: 15px;
+   border: 1px solid rgb(250, 250, 250);
+   /* padding: 15px  5px; */
+   /* margin: 10px 40px */
+   
+   
+}
+.container-item-2 img{
+    width: 100%;
+}
+.leftpage{
+    margin: 0px 150px;
+}
+.leftpage-content{
+  margin: 20px 150px;
+
+  padding: 10px;
+}
+
+.leftpage-content:hover{
+  background-color: #01BCD4;
+   color: rgb(255, 255, 255);
+}
+ 
+@media (max-width: 600px){
+    .leftpage{
+        padding: 15px;
+        margin: 10px;
+    }
+    .leftpage-content{
+        margin: 10px;
+    }
+}
+
+
+/* for what we work on section 3  */
+
+.grid-container-3{
+  display: grid;
+  grid-column-gap: 5px;
+  grid-template-columns: repeat(auto-fit , 30rem);
+  justify-content: center;
+  padding: 25px 250px;
+  margin: auto;
+}
+
+.container-item-3{
+  background-color: white;
+   font-size: 15px;
+   border: 1px solid rgb(250, 250, 250);
+   padding: 15px  18px;
+   margin: 10px 20px;
+   text-align: left;
+   border-radius: 5px;
+}
+.container-item-3 img{
+  width: 100%;
+  margin: 0px;
+}
+.container-item-3 h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--font3);
+  font-size: 18px;
+  margin: 20px auto;
+}
+
+.section3 {
+  /* background-image:  linear-gradient(blue lightblue); */
+  background-color: #01BCD4;
+  width: 100%;
+  padding: 25px 20%;
+  justify-content: center;
+  color: white;
+  
+  letter-spacing: 1px;
+  font-family: var(--font3);
+}
+.section3 h3{
+  font-family: var(--font3);
+  text-transform: capitalize;
+}
+
+.section4 h3{
+  font-family: var(--font3);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 50px auto;
+}
+
+.container-item-3 h3{
+  margin: 20px !important;
+
+}
+
+/* for contact form  */
+
+form{
+  transition: all 2s ease-in-out;
+}
+ input[type=text] ,textarea{
+    outline: none;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgb(88, 88, 88);
+    padding: 12px;
+    box-sizing: border-box;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-family: var(--font3);
+    background: transparent;
+ }
+
+ .rightpage{
+     margin: 50px 150px 0px 150px;
+ }
+
+ input[type=submit]{
+  width: 100%;
+     margin-top: 16px;
+     border-radius: 4px;
+     padding: 10px 20px;
+     border: none;
+     cursor: pointer;
+     color: white;
+     background-color: #4CAF50;
+     font-family: var(--font3);
+     border: none;
+     
+
+ }
+ input[type=submit]:hover{
+    background-color: #45a049;
+ }
+ @media (max-width: 600px){
+     .rightpage{
+         margin: 18px;
+     }
+ }
+
+/* for footer part */
+
+.gridcontainer-4{
+  
+    display: grid;
+    grid-column-gap: 0px;
+    grid-template-columns: repeat(auto-fit , minmax(400px , 2fr));
+    justify-content: center;
+    padding: 25px 0px;
+    font-family: var(--para);
+    color: white;
+    margin: 10px 250px;
+}
+.container-item-4{
+    /* background-color: #00BCD5; */
+    padding: 50px;
+    margin: 20px;
+    
+}
+.footer{
+    background-color: black;
+}
+.left-content{
+    margin: 10px 50px;
+    
+    font-size: 16px;
+}
+.right-content{
+    margin: 10px 50px;
+    width: 450px;
+    
+}
+.contact{
+    padding: 10px;
+}
+@media (max-width: 600px){
+    .right-content{
+        margin: 0px;
+        padding: 10px;
+    }
+    .left-content{
+        margin: 0px;
+        padding: 10px;
+    }
+}
+
+
+/* about us page ka css hai */
+  .aboutpage{
+      padding: 20px;
+      background-color: black;
+      color: white;
+      text-align: center;
+  }
+  .aboutpage h2{
+      font-weight: 600px;
+      text-transform: uppercase;
+  }
+
+  .aboutpage-grid{
+    display: grid;
+    grid-column-gap: 5px;
+    grid-template-columns: repeat(auto-fit , 35rem);
+    justify-content: center;
+    padding: 25px 250px;
+    margin: auto;
+
+  }
+  .about-grid-item{
+    background-color: white;
+    font-size: 15px;
+    border: 1px solid rgb(250, 250, 250);
+    padding: 15px  20px;
+    margin: 10px 20px;
+    text-align: left;
+    border-radius: 5px;
+   
+  }
+
+  .about-grid-item h3{
+      color: black;
+      font-size: 20px;
+  }
+.about-grid-item:hover {
+    background-color:#01BCD4; 
+    color: white;
+}
+
+/* yeh services page ka css hai */
+
+.grid-service{
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: repeat(auto-fit , minmax(300px , 2fr));
+    justify-content: center;
+    margin: 40px 300px;
+    font-family: var(--para);
+    /* background-color: #704343; */
+    font-family: var(--font3);
+    
+}
+.service-item{
+    
+    font-size: 15px;
+    border: 1px solid rgb(250, 250, 250);
+    padding: 10px;
+    margin: 10px 40px;
+}
+.service-item img{
+    width: 100%;
+}
+
+.service-item h3{
+    font-family: var(--font2);
+    
+    font-weight: bold;
+
+}
+.service-item h4{
+    font-size: 16px;
+    word-spacing: 1px;
+    font-weight: bold;
+    line-height: 25px;
+}
+.service-item p{
+    line-height: 29px;
+}
+
+@media(max-width:600px){
+    .grid-service{
+        margin: 0px;
+        padding: 10px;
+    }  
+}
+
+
+/*  *****************   for contact us page   ************************** */
+
+
+.contact-grid{
+  display: grid;
+  grid-column-gap: 0px;
+  grid-template-columns: repeat(auto-fit , minmax(400px , 2fr));
+  justify-content: center;
+  padding: 25px 0px;
+  font-family: var(--para);
+  background-color: #aa0000;
+}
+
+.contact-grid-item{
+  background-color: #F8F8F8;
+  font-size: 15px;
+  border: 1px solid rgb(250, 250, 250);
+  /* padding: 15px  5px; */
+  /* margin: 10px 40px */
+}
+
+.left-page-content p {
+  color: black !important;
+}
